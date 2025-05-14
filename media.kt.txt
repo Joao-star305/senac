@@ -1,0 +1,48 @@
+import kotlin.random.Random
+
+fun calculaMedia(n1:Double, n2:Double, n3:Double):Double{
+
+    return (n1 + n2 + n3) / 3
+
+}
+
+fun main() {
+
+    val n1:Double = Random.nextDouble(2.5, 10.0)
+
+    val n1Formatado = String.format("%.2f", n1).toDouble()
+
+    val n2:Double = Random.nextDouble(2.5, 10.0)
+
+    val n2Formatado = String.format("%.2f", n2).toDouble()
+
+    val n3:Double = Random.nextDouble(2.5, 10.0)
+
+    val n3Formatado = String.format("%.2f", n3).toDouble()
+
+    val resultado:Double = calculaMedia(n1,n2,n3)
+
+    val resultadoFormatado = String.format("%.2f", resultado).toDouble()
+
+    println("1: $n1Formatado, \n2: $n2Formatado, \n3: $n3Formatado \nMédia: $resultadoFormatado")
+
+    if(resultadoFormatado < 6.5){
+
+        println("$resultadoFormatado: ND")
+
+    }
+
+    else if(resultadoFormatado >= 6.5 || resultadoFormatado <= 9.0){
+
+        println("$resultadoFormatado: ED")
+
+    }
+
+    else {
+
+        println("PD!!!")
+
+	}
+
+}
+ 

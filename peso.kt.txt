@@ -1,0 +1,11 @@
+fun main() {
+    val peso = 70.0
+    val altura = 1.75
+
+    val imc = calcularIMC(peso, altura)
+    val classificacao = classificarIMC(imc)
+
+    println("IMC: $imc")
+    println("Classificação: $classificacao")
+}
+ 

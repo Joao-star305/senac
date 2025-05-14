@@ -1,0 +1,9 @@
+fun celsiusParaFahrenheit(celsius: Double): Double {
+    return (celsius * 9/5) + 32
+}
+
+fun main() {
+    val temperaturaCelsius = 25.0
+    val temperaturaFahrenheit = celsiusParaFahrenheit(temperaturaCelsius)
+    println("$temperaturaCelsius°C é equivalente a $temperaturaFahrenheit°F")
+}
